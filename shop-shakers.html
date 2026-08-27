@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shakers & Accessories | Dignity Health</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="announce">FSSAI APPROVED &nbsp;·&nbsp; LAB TESTED &nbsp;·&nbsp; BANNED SUBSTANCE FREE &nbsp;·&nbsp; FREE SHIPPING ABOVE ₹999</div>
+<header class="site-header">
+  <div class="wrap header-row">
+    <button class="menu-toggle" aria-label="Menu" onclick="DH.openMobileNav()">☰</button>
+    <a href="index.html" class="logo">
+      <div class="logo-mark">DH</div>
+      <div class="logo-text">DIGNITY HEALTH<span>NUTRACEUTICAL</span></div>
+    </a>
+    <nav class="main-nav"><ul><li><a href="shop-whey-protein.html">Whey Protein</a></li>
+<li><a href="shop-pre-workout.html">Pre-Workout</a></li>
+<li><a href="shop-creatine.html">Creatine</a></li>
+<li><a href="shop-mass-gainer.html">Mass Gainer</a></li>
+<li><a href="shop-shakers.html" class="active">Shakers</a></li>
+<li><a href="shop-multivitamin.html">Multivitamin</a></li>
+<li><a href="about-us.html">About Us</a></li>
+</ul></nav>
+    <div class="header-icons">
+      <a href="#" onclick="return false;">Search</a>
+      <div class="account-wrap">
+        <button class="icon-btn" onclick="DH.toggleAccount(event)">Account</button>
+        <div class="account-dropdown" id="accountDropdown">
+          <a href="account.html">My Account</a>
+          <a href="account.html#orders">My Orders</a>
+          <a href="account.html#wishlist">Wishlist</a>
+          <div class="div"></div>
+          <a href="account.html">Sign In / Register</a>
+        </div>
+      </div>
+      <button class="icon-btn" onclick="DH.openCart()">Cart (<span data-cart-count>0</span>)</button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay" id="dhOverlay" onclick="DH.closeCart(); DH.closeMobileNav();"></div>
+
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3 class="display">Your Cart</h3>
+    <button class="cart-close" onclick="DH.closeCart()">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-subtotal-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+    <a href="checkout.html" class="btn-primary">Checkout</a>
+    <div class="cart-foot-note">Shipping and taxes calculated at checkout · Free shipping above ₹999</div>
+  </div>
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="DH.closeMobileNav()">&times; Close</button>
+  <a href="shop-whey-protein.html">Whey Protein</a><a href="shop-pre-workout.html">Pre-Workout</a><a href="shop-creatine.html">Creatine</a><a href="shop-mass-gainer.html">Mass Gainer</a><a href="shop-shakers.html">Shakers</a><a href="shop-multivitamin.html">Multivitamin</a><a href="about-us.html">About Us</a>
+  <a href="account.html">My Account</a>
+  <a href="contact-us.html">Contact</a>
+</div>
+
+<div class="toast" id="dhToast"></div>
+
+
+<div class="breadcrumb"><div class="wrap"><a href="index.html">Home</a> <span class='sep'>/</span> <span class="current">Shakers & Accessories</span></div></div>
+
+<section class="category-hero">
+  <div class="wrap"><h1 class="display">Shakers & Accessories</h1><p>ShakeSphere tumblers — bladeless mixing technology, no clumps, no shaker balls. STEEL, VIEW and Matte finishes.</p></div>
+</section>
+<div class="wrap">
+  <div class="subcat-pills">
+  <a href="shop-whey-protein.html">Whey Protein</a>
+  <a href="shop-pre-workout.html">Pre-Workout</a>
+  <a href="shop-creatine.html">Creatine</a>
+  <a href="shop-mass-gainer.html">Mass Gainer</a>
+  <a href="shop-shakers.html" class="active">Shakers</a>
+  <a href="shop-multivitamin.html">Multivitamin</a>
+</div>
+  <div class="category-layout">
+    <aside>
+      <div class="filter-box">
+        <h5>Price range</h5>
+        <div class="range-track"></div>
+        <div class="range-labels"><span>₹0</span><span>₹8,500</span></div>
+      </div>
+      <div class="filter-box">
+        <h5>Options</h5>
+        <label><input type="checkbox" checked> STEEL, Matte Black</label><label><input type="checkbox" checked> STEEL, Copper</label><label><input type="checkbox" checked> Frosted With Black Logo</label><label><input type="checkbox" checked> VIEW, Rose Gold / Clear Window</label><label><input type="checkbox" checked> VIEW, Rose Gold / Black Window</label><label><input type="checkbox" checked> VIEW, Pearl White / Orange Window</label><label><input type="checkbox" checked> VIEW, Matte White / Black Window</label><label><input type="checkbox" checked> VIEW, Matte Grey / Black Window</label><label><input type="checkbox" checked> VIEW, Matte Black / Black Window</label><label><input type="checkbox" checked> VIEW, Gun Metal / Clear Window</label><label><input type="checkbox" checked> STEEL, Original</label><label><input type="checkbox" checked> STEEL, Rose Gold, Black Logo</label><label><input type="checkbox" checked> STEEL, Rose Gold, Steel Logo</label><label><input type="checkbox" checked> STEEL, Mirrored Pink</label><label><input type="checkbox" checked> STEEL, Mirrored Silver</label><label><input type="checkbox" checked> STEEL, Mirrored Black</label><label><input type="checkbox" checked> STEEL, Lava</label><label><input type="checkbox" checked> STEEL, Concrete</label><label><input type="checkbox" checked> Matte Black With Black Logo</label><label><input type="checkbox" checked> Matte Black With White Logo</label>
+      </div>
+      <div class="filter-box">
+        <h5>Brand</h5>
+        <label><input type="checkbox" checked> Dignity Health</label>
+      </div>
+    </aside>
+    <div>
+      <div class="toolbar">
+        <div class="toolbar-count">Showing 20 results</div>
+        <select><option>Sort by: Popularity</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest</option></select>
+      </div>
+      <div class="category-grid">
+        
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-1-steel-matte-black.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-matte-black.jpg" alt="ShakeSphere Tumbler, STEEL, Matte Black" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-1-steel-matte-black.html">ShakeSphere Tumbler, STEEL, Matte Black</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-1', name:'ShakeSphere Tumbler, STEEL, Matte Black', price:8499, img:'assets/img/shakers/shaker-steel-matte-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-2-steel-copper.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-copper.jpg" alt="ShakeSphere Tumbler, STEEL, Copper" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-2-steel-copper.html">ShakeSphere Tumbler, STEEL, Copper</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-2', name:'ShakeSphere Tumbler, STEEL, Copper', price:8499, img:'assets/img/shakers/shaker-steel-copper.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-3-frosted-with-black-logo.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-frosted-black-logo.jpg" alt="ShakeSphere Tumbler, Frosted With Black Logo" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-3-frosted-with-black-logo.html">ShakeSphere Tumbler, Frosted With Black Logo</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-3', name:'ShakeSphere Tumbler, Frosted With Black Logo', price:2499, img:'assets/img/shakers/shaker-frosted-black-logo.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-4-view-rose-gold-clear-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-rosegold-clear.jpg" alt="ShakeSphere Tumbler, VIEW, Rose Gold / Clear Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-4-view-rose-gold-clear-window.html">ShakeSphere Tumbler, VIEW, Rose Gold / Clear Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-4', name:'ShakeSphere Tumbler, VIEW, Rose Gold / Clear Window', price:2999, img:'assets/img/shakers/shaker-view-rosegold-clear.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-5-view-rose-gold-black-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-rosegold-black.jpg" alt="ShakeSphere Tumbler, VIEW, Rose Gold / Black Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-5-view-rose-gold-black-window.html">ShakeSphere Tumbler, VIEW, Rose Gold / Black Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-5', name:'ShakeSphere Tumbler, VIEW, Rose Gold / Black Window', price:2999, img:'assets/img/shakers/shaker-view-rosegold-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-6-view-pearl-white-orange-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-pearlwhite-orange.jpg" alt="ShakeSphere Tumbler, VIEW, Pearl White / Orange Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-6-view-pearl-white-orange-window.html">ShakeSphere Tumbler, VIEW, Pearl White / Orange Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-6', name:'ShakeSphere Tumbler, VIEW, Pearl White / Orange Window', price:2999, img:'assets/img/shakers/shaker-view-pearlwhite-orange.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-7-view-matte-white-black-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-mattewhite-black.jpg" alt="ShakeSphere Tumbler, VIEW, Matte White / Black Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-7-view-matte-white-black-window.html">ShakeSphere Tumbler, VIEW, Matte White / Black Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-7', name:'ShakeSphere Tumbler, VIEW, Matte White / Black Window', price:2999, img:'assets/img/shakers/shaker-view-mattewhite-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-8-view-matte-grey-black-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-mattegrey-black.jpg" alt="ShakeSphere Tumbler, VIEW, Matte Grey / Black Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-8-view-matte-grey-black-window.html">ShakeSphere Tumbler, VIEW, Matte Grey / Black Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-8', name:'ShakeSphere Tumbler, VIEW, Matte Grey / Black Window', price:2999, img:'assets/img/shakers/shaker-view-mattegrey-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-9-view-matte-black-black-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-matteblack-black.jpg" alt="ShakeSphere Tumbler, VIEW, Matte Black / Black Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-9-view-matte-black-black-window.html">ShakeSphere Tumbler, VIEW, Matte Black / Black Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-9', name:'ShakeSphere Tumbler, VIEW, Matte Black / Black Window', price:2999, img:'assets/img/shakers/shaker-view-matteblack-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-10-view-gun-metal-clear-window.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-view-gunmetal-clear.jpg" alt="ShakeSphere Tumbler, VIEW, Gun Metal / Clear Window" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-10-view-gun-metal-clear-window.html">ShakeSphere Tumbler, VIEW, Gun Metal / Clear Window</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,999</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-10', name:'ShakeSphere Tumbler, VIEW, Gun Metal / Clear Window', price:2999, img:'assets/img/shakers/shaker-view-gunmetal-clear.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-11-steel-original.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-original.jpg" alt="ShakeSphere Tumbler, STEEL, Original" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-11-steel-original.html">ShakeSphere Tumbler, STEEL, Original</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-11', name:'ShakeSphere Tumbler, STEEL, Original', price:8499, img:'assets/img/shakers/shaker-steel-original.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-12-steel-rose-gold-black-logo.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-rosegold-blacklogo.jpg" alt="ShakeSphere Tumbler, STEEL, Rose Gold, Black Logo" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-12-steel-rose-gold-black-logo.html">ShakeSphere Tumbler, STEEL, Rose Gold, Black Logo</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-12', name:'ShakeSphere Tumbler, STEEL, Rose Gold, Black Logo', price:8499, img:'assets/img/shakers/shaker-steel-rosegold-blacklogo.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-13-steel-rose-gold-steel-logo.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-rosegold-steellogo.jpg" alt="ShakeSphere Tumbler, STEEL, Rose Gold, Steel Logo" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-13-steel-rose-gold-steel-logo.html">ShakeSphere Tumbler, STEEL, Rose Gold, Steel Logo</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-13', name:'ShakeSphere Tumbler, STEEL, Rose Gold, Steel Logo', price:8499, img:'assets/img/shakers/shaker-steel-rosegold-steellogo.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-14-steel-mirrored-pink.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-mirrored-pink.jpg" alt="ShakeSphere Tumbler, STEEL, Mirrored Pink" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-14-steel-mirrored-pink.html">ShakeSphere Tumbler, STEEL, Mirrored Pink</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-14', name:'ShakeSphere Tumbler, STEEL, Mirrored Pink', price:8499, img:'assets/img/shakers/shaker-steel-mirrored-pink.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-15-steel-mirrored-silver.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-mirrored-silver.jpg" alt="ShakeSphere Tumbler, STEEL, Mirrored Silver" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-15-steel-mirrored-silver.html">ShakeSphere Tumbler, STEEL, Mirrored Silver</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-15', name:'ShakeSphere Tumbler, STEEL, Mirrored Silver', price:8499, img:'assets/img/shakers/shaker-steel-mirrored-silver.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-16-steel-mirrored-black.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-mirrored-black.jpg" alt="ShakeSphere Tumbler, STEEL, Mirrored Black" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-16-steel-mirrored-black.html">ShakeSphere Tumbler, STEEL, Mirrored Black</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-16', name:'ShakeSphere Tumbler, STEEL, Mirrored Black', price:8499, img:'assets/img/shakers/shaker-steel-mirrored-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-17-steel-lava.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-lava.jpg" alt="ShakeSphere Tumbler, STEEL, Lava" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-17-steel-lava.html">ShakeSphere Tumbler, STEEL, Lava</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-17', name:'ShakeSphere Tumbler, STEEL, Lava', price:8499, img:'assets/img/shakers/shaker-steel-lava.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-18-steel-concrete.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-concrete.jpg" alt="ShakeSphere Tumbler, STEEL, Concrete" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-18-steel-concrete.html">ShakeSphere Tumbler, STEEL, Concrete</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-18', name:'ShakeSphere Tumbler, STEEL, Concrete', price:8499, img:'assets/img/shakers/shaker-steel-concrete.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-19-matte-black-with-black-logo.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-matteblack-blacklogo.jpg" alt="ShakeSphere Tumbler, Matte Black With Black Logo" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-19-matte-black-with-black-logo.html">ShakeSphere Tumbler, Matte Black With Black Logo</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-19', name:'ShakeSphere Tumbler, Matte Black With Black Logo', price:2499, img:'assets/img/shakers/shaker-matteblack-blacklogo.jpg', variant:''})">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-20-matte-black-with-white-logo.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-matteblack-whitelogo.jpg" alt="ShakeSphere Tumbler, Matte Black With White Logo" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS & ACCESSORIES</div>
+        <div class="pcard-name"><a href="product-shaker-20-matte-black-with-white-logo.html">ShakeSphere Tumbler, Matte Black With White Logo</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹2,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-20', name:'ShakeSphere Tumbler, Matte Black With White Logo', price:2499, img:'assets/img/shakers/shaker-matteblack-whitelogo.jpg', variant:''})">Add to Cart</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="footer-teaser">
+  <div class="wrap">
+    <h3 class="display">TERE SE NAHI HOGA?</h3>
+    <p>Prove it. Free shipping on your first order above ₹999.</p>
+    <a href="shop-whey-protein.html" class="btn-primary">Shop the full range</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="newsletter">
+    <div class="wrap">
+      <h3 class="display">Email for enquiry</h3>
+      <p>For business inquiries, bulk orders and partnerships, we'd love to connect.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); DH.closeAccount(); alert('Thanks for subscribing! (demo form)');">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-main">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">DH</div>
+          <div class="logo-text">DIGNITY HEALTH<span>NUTRACEUTICAL</span></div>
+        </a>
+        <p>Lab-tested, FSSAI-approved sports nutrition built for the Indian lifter. Whey protein, pre-workout, creatine, mass gainers, shakers and multivitamins — one brand, one standard.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="YouTube">yt</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="shop-whey-protein.html">Products</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="branch-locations.html">Branch Locations</a></li>
+          <li><a href="product-authentication.html">Product Authentication</a></li>
+          <li><a href="account.html">My Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="return-refund-policy.html">Return &amp; Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Reach out to us</h4>
+        <p><strong>Sales &amp; third party:</strong><br>+91 93559 95565<br>enquiry@mydignity.in</p>
+        <p><strong>Head office:</strong><br>Dignity Health HQ (Nutricel Organics)<br>Shop No. 27, Rosa Manhattan, Hiranandani Estate, Kavesar, GB Road, Thane (W) – 400615, Mumbai, India</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Dignity Health. All Rights Reserved. — Nutricel Organics</div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
