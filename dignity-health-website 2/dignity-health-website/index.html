@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Dignity Health</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="announce">FSSAI APPROVED &nbsp;·&nbsp; LAB TESTED &nbsp;·&nbsp; BANNED SUBSTANCE FREE &nbsp;·&nbsp; FREE SHIPPING ABOVE ₹999</div>
+<header class="site-header">
+  <div class="wrap header-row">
+    <button class="menu-toggle" aria-label="Menu" onclick="DH.openMobileNav()">☰</button>
+    <a href="index.html" class="logo">
+      <div class="logo-mark">DH</div>
+      <div class="logo-text">DIGNITY HEALTH<span>NUTRACEUTICAL</span></div>
+    </a>
+    <nav class="main-nav"><ul><li><a href="shop-whey-protein.html">Whey Protein</a></li>
+<li><a href="shop-pre-workout.html">Pre-Workout</a></li>
+<li><a href="shop-creatine.html">Creatine</a></li>
+<li><a href="shop-mass-gainer.html">Mass Gainer</a></li>
+<li><a href="shop-shakers.html">Shakers</a></li>
+<li><a href="shop-multivitamin.html">Multivitamin</a></li>
+<li><a href="about-us.html">About Us</a></li>
+</ul></nav>
+    <div class="header-icons">
+      <a href="#" onclick="return false;">Search</a>
+      <div class="account-wrap">
+        <button class="icon-btn" onclick="DH.toggleAccount(event)">Account</button>
+        <div class="account-dropdown" id="accountDropdown">
+          <a href="account.html">My Account</a>
+          <a href="account.html#orders">My Orders</a>
+          <a href="account.html#wishlist">Wishlist</a>
+          <div class="div"></div>
+          <a href="account.html">Sign In / Register</a>
+        </div>
+      </div>
+      <button class="icon-btn" onclick="DH.openCart()">Cart (<span data-cart-count>0</span>)</button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay" id="dhOverlay" onclick="DH.closeCart(); DH.closeMobileNav();"></div>
+
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3 class="display">Your Cart</h3>
+    <button class="cart-close" onclick="DH.closeCart()">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-subtotal-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+    <a href="checkout.html" class="btn-primary">Checkout</a>
+    <div class="cart-foot-note">Shipping and taxes calculated at checkout · Free shipping above ₹999</div>
+  </div>
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="DH.closeMobileNav()">&times; Close</button>
+  <a href="shop-whey-protein.html">Whey Protein</a><a href="shop-pre-workout.html">Pre-Workout</a><a href="shop-creatine.html">Creatine</a><a href="shop-mass-gainer.html">Mass Gainer</a><a href="shop-shakers.html">Shakers</a><a href="shop-multivitamin.html">Multivitamin</a><a href="about-us.html">About Us</a>
+  <a href="account.html">My Account</a>
+  <a href="contact-us.html">Contact</a>
+</div>
+
+<div class="toast" id="dhToast"></div>
+
+
+
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="stamp"><span class="stamp-dot"></span>THE CHALLENGE</div>
+      <h1 class="hero-line display">TERE SE<br><span class="accent">NAHI HOGA.</span></h1>
+      <p class="hero-sub">Prove it. Lab-tested, FSSAI-approved nutrition built for the Indian lifter who trains like he's got something to prove.</p>
+      <div class="hero-ctas">
+        <a href="shop-whey-protein.html" class="btn-primary">Shop the range</a>
+        <a href="about-us.html" class="btn-secondary on-dark">Our story</a>
+      </div>
+      <div class="hero-proof">
+        <div><b>24g</b>protein / serving</div>
+        <div><b>0%</b>banned substances</div>
+        <div><b>7</b>branch cities</div>
+        <div><b>4.1★</b>avg rating</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/img/gainer-3kg-hero.jpg" alt="Dignity Health Maxxx Gainer chocolate flavour">
+    </div>
+  </div>
+</section>
+
+<section class="trustbar">
+  <div class="wrap trust-row">
+    <div class="trust-item"><span class="trust-icon">✓</span>Sugar Free</div>
+    <div class="trust-item"><span class="trust-icon">✓</span>GMO Free</div>
+    <div class="trust-item"><span class="trust-icon">✓</span>Soy Free</div>
+    <div class="trust-item"><span class="trust-icon">✓</span>Gluten Free</div>
+    <div class="trust-item"><span class="trust-icon">✓</span>Low Cholesterol</div>
+    <div class="trust-item"><span class="trust-icon">✓</span>Low Fat</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">SHOP BY GOAL</span><h2 class="section-title">What's your problem right now?</h2></div></div>
+    <div class="goal-grid">
+      <a href="shop-whey-protein.html" class="goal-card"><div><div class="goal-tag">01 · RECOVERY</div><div class="goal-title display">CAN'T BUILD MUSCLE</div><div class="goal-sub">24g whey protein, 4 flavours</div></div><div class="goal-cta">Shop Whey Protein →</div></a>
+      <a href="shop-pre-workout.html" class="goal-card"><div><div class="goal-tag">02 · ENERGY</div><div class="goal-title display">DYING BY SET 3</div><div class="goal-sub">Deja Vu Pre-Workout, 5 flavours</div></div><div class="goal-cta">Shop Pre-Workout →</div></a>
+      <a href="shop-creatine.html" class="goal-card"><div><div class="goal-tag">03 · STRENGTH</div><div class="goal-title display">STUCK ON THE SAME PR</div><div class="goal-sub">Micronized Creatine, 4 flavours</div></div><div class="goal-cta">Shop Creatine →</div></a>
+      <a href="shop-mass-gainer.html" class="goal-card"><div><div class="goal-tag">04 · MASS</div><div class="goal-title display">TOO SKINNY TO LIFT</div><div class="goal-sub">Maxxx Gainer, now in 3kg &amp; 5kg</div></div><div class="goal-cta">Shop Mass Gainer →</div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">COMPLETE THE KIT</span><h2 class="section-title">Gear &amp; daily health</h2></div></div>
+    <div class="goal-grid">
+      <a href="shop-shakers.html" class="goal-card" style="background:linear-gradient(160deg,#2c2c2c,#0e0e0e);"><div><div class="goal-tag">05 · GEAR</div><div class="goal-title display">MIXING IT WRONG</div><div class="goal-sub">ShakeSphere bladeless tumblers, 20 finishes</div></div><div class="goal-cta">Shop Shakers →</div></a>
+      <a href="shop-multivitamin.html" class="goal-card" style="background:linear-gradient(160deg,#3a2a55,#160e22);"><div><div class="goal-tag">06 · DAILY HEALTH</div><div class="goal-title display">RUNNING ON EMPTY</div><div class="goal-sub">32 vitamins &amp; minerals, daily formula</div></div><div class="goal-cta">Shop Multivitamin →</div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">BESTSELLERS</span><h2 class="section-title">Prove it with these</h2></div>
+      <a class="section-link" href="shop-whey-protein.html">View all products</a>
+    </div>
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <div class="pcard-stamp">FSSAI<br>APPROVED</div>
+        <a href="product-whey-protein-swiss-chocolate.html" class="pcard-img-wrap"><img src="assets/img/whey-swiss-chocolate.jpg" alt="Dignity Whey Protein Swiss Chocolate" loading="lazy"></a>
+        <div class="pcard-cat">WHEY PROTEIN · SWISS CHOCOLATE</div>
+        <div class="pcard-name"><a href="product-whey-protein-swiss-chocolate.html">Dignity Whey Protein Swiss Chocolate</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(17)</span></div>
+        <div class="pcard-price"><span class="price-now">₹5,524</span><span class="price-was">₹8,499</span><span class="price-off">35% OFF</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'whey-swiss-chocolate', name:'Dignity Whey Protein Swiss Chocolate', price:5524, img:'assets/img/whey-swiss-chocolate.jpg', variant:''})">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <div class="pcard-stamp">LAB<br>TESTED</div>
+        <a href="product-preworkout-guava.html" class="pcard-img-wrap"><img src="assets/img/preworkout-guava.jpg" alt="Deja Vu Pre-Workout Guava" loading="lazy"></a>
+        <div class="pcard-cat">PRE-WORKOUT · GUAVA</div>
+        <div class="pcard-name"><a href="product-preworkout-guava.html">Deja Vu Pre-Workout Guava</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(25)</span></div>
+        <div class="pcard-price"><span class="price-now">₹1,624</span><span class="price-was">₹2,499</span><span class="price-off">35% OFF</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'pw-guava', name:'Deja Vu Pre-Workout Guava', price:1624, img:'assets/img/preworkout-guava.jpg', variant:''})">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <div class="pcard-stamp">GMO<br>FREE</div>
+        <a href="product-maxxx-gainer-5kg.html" class="pcard-img-wrap"><img src="assets/img/gainer-5kg-hero.jpg" alt="Maxxx Gainer 5kg" loading="lazy"></a>
+        <div class="pcard-cat">MASS GAINER · 5KG</div>
+        <div class="pcard-name"><a href="product-maxxx-gainer-5kg.html">Maxxx Gainer 5kg</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(9)</span></div>
+        <div class="pcard-price"><span class="price-now">₹3,299</span><span class="price-was">₹5,299</span><span class="price-off">38% OFF</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'gainer-5kg', name:'Maxxx Gainer 5kg', price:3299, img:'assets/img/gainer-5kg-hero.jpg', variant:''})">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <div class="pcard-stamp">BPA<br>FREE</div>
+        <a href="product-shaker-1-steel-matte-black.html" class="pcard-img-wrap"><img src="assets/img/shakers/shaker-steel-matte-black.jpg" alt="ShakeSphere Tumbler, STEEL Matte Black" loading="lazy"></a>
+        <div class="pcard-cat">SHAKERS · STEEL</div>
+        <div class="pcard-name"><a href="product-shaker-1-steel-matte-black.html">ShakeSphere Tumbler, STEEL Matte Black</a></div>
+        <div class="pcard-rating">★★★★☆ <span>(16)</span></div>
+        <div class="pcard-price"><span class="price-now">₹8,499</span></div>
+        <button class="btn-cart" onclick="DH.addToCart({id:'shaker-1', name:'ShakeSphere Tumbler, STEEL Matte Black', price:8499, img:'assets/img/shakers/shaker-steel-matte-black.jpg', variant:''})">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section why">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold);">WHY DIGNITY HEALTH</span>
+    <h2 class="section-title" style="color:#fff;">Same rigor as the imports. None of the import price.</h2>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-num">01</div><div class="why-title">Lab tested, every batch</div><div class="why-copy">Independently verified for banned substances before it ships — not a claim on a label, a certificate you can ask for.</div></div>
+      <div class="why-item"><div class="why-num">02</div><div class="why-title">Built for Indian bodies</div><div class="why-copy">Digestive enzymes for easier absorption, flavours tuned for the Indian palate — not a re-labelled US formula.</div></div>
+      <div class="why-item"><div class="why-num">03</div><div class="why-title">Full stack, one brand</div><div class="why-copy">Whey, pre-workout, creatine, mass gainer, shakers and multivitamins — stop mixing five brands to cover your stack.</div></div>
+      <div class="why-item"><div class="why-num">04</div><div class="why-title">7 cities, real stock</div><div class="why-copy">London, Mumbai, Bangalore, Amritsar, Bhiwandi, Nashik, Aurangabad — not a drop-shipped warehouse brand.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">#MYDIGNITYSTORY</span><h2 class="section-title">They said it wouldn't happen</h2></div></div>
+    <div class="ugc-grid">
+      <div class="ugc-card"><div class="ugc-quote">"Started at 58kg. Everyone said mera weight kabhi nahi badhega. 4kg in 6 weeks with Maxxx Gainer — no bloating, easy to digest."</div><div class="ugc-person"><div class="ugc-avatar">VS</div><div><div class="ugc-name">Vivaan Sharma</div><div class="ugc-meta">MASS GAINER · MUMBAI</div></div></div></div>
+      <div class="ugc-card"><div class="ugc-quote">"Switched from an import brand — same protein number, half the price, and I can actually pronounce the ingredients."</div><div class="ugc-person"><div class="ugc-avatar">NB</div><div><div class="ugc-name">Neha Bansal</div><div class="ugc-meta">WHEY PROTEIN · THANE</div></div></div></div>
+      <div class="ugc-card"><div class="ugc-quote">"Deja Vu is the only pre I've used that doesn't crash me by set 6. Guava flavour is genuinely good, not chalky."</div><div class="ugc-person"><div class="ugc-avatar">TB</div><div><div class="ugc-name">Tarun Bansal</div><div class="ugc-meta">PRE-WORKOUT · NASHIK</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">@DIGNITYHEALTH</span><h2 class="section-title">Follow the grind</h2></div></div>
+    <div class="insta-strip">
+      <a href="#"><img src="assets/img/whey-swiss-chocolate.jpg" alt="Instagram post"></a>
+      <a href="#"><img src="assets/img/preworkout-guava.jpg" alt="Instagram post"></a>
+      <a href="#"><img src="assets/img/gainer-5kg-hero.jpg" alt="Instagram post"></a>
+      <a href="#"><img src="assets/img/creatine-lemon.jpg" alt="Instagram post"></a>
+      <a href="#"><img src="assets/img/shakers/shaker-steel-mirrored-pink.jpg" alt="Instagram post"></a>
+      <a href="#"><img src="assets/img/multivitamin-men.jpg" alt="Instagram post"></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head"><div><span class="eyebrow">FAQ</span><h2 class="section-title">Before you order</h2></div></div>
+    <div>
+      <div class="faq-item">
+        <div class="faq-q">How long does shipping take?<span class="plus">+</span></div>
+        <div class="faq-a">2–4 business days in metro cities, 5–7 days for non-metro pin codes. Free shipping on prepaid orders above ₹999.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is this product FSSAI approved and lab tested?<span class="plus">+</span></div>
+        <div class="faq-a">Yes — every batch is FSSAI approved and independently lab tested for banned substances before it ships. See our Product Authentication page to verify your batch code.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I return it if I don't like it?<span class="plus">+</span></div>
+        <div class="faq-a">Unopened, sealed products can be returned within 7 days. Opened products can only be returned if defective — full details on our Return & Refund Policy page.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I know which product is right for me?<span class="plus">+</span></div>
+        <div class="faq-a">Check the 'Shop by Goal' section on our homepage, or message us on chat — our team will help match a product to your training goal.</div>
+      </div></div>
+  </div>
+</section>
+
+
+<section class="footer-teaser">
+  <div class="wrap">
+    <h3 class="display">TERE SE NAHI HOGA?</h3>
+    <p>Prove it. Free shipping on your first order above ₹999.</p>
+    <a href="shop-whey-protein.html" class="btn-primary">Shop the full range</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="newsletter">
+    <div class="wrap">
+      <h3 class="display">Email for enquiry</h3>
+      <p>For business inquiries, bulk orders and partnerships, we'd love to connect.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); DH.closeAccount(); alert('Thanks for subscribing! (demo form)');">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-main">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">DH</div>
+          <div class="logo-text">DIGNITY HEALTH<span>NUTRACEUTICAL</span></div>
+        </a>
+        <p>Lab-tested, FSSAI-approved sports nutrition built for the Indian lifter. Whey protein, pre-workout, creatine, mass gainers, shakers and multivitamins — one brand, one standard.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="YouTube">yt</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="shop-whey-protein.html">Products</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="branch-locations.html">Branch Locations</a></li>
+          <li><a href="product-authentication.html">Product Authentication</a></li>
+          <li><a href="account.html">My Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="return-refund-policy.html">Return &amp; Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Reach out to us</h4>
+        <p><strong>Sales &amp; third party:</strong><br>+91 93559 95565<br>enquiry@mydignity.in</p>
+        <p><strong>Head office:</strong><br>Dignity Health HQ (Nutricel Organics)<br>Shop No. 27, Rosa Manhattan, Hiranandani Estate, Kavesar, GB Road, Thane (W) – 400615, Mumbai, India</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Dignity Health. All Rights Reserved. — Nutricel Organics</div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
